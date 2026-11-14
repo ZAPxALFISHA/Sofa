@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashraf Sofas – Luxury Sofas, Custom Sofas & Sofa Repair</title>
+<meta name="description" content="Ashraf Sofas crafts luxury sofas, bespoke custom furniture and expert sofa restoration. Request a free quote today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--em:#123C32;--gold:#D6B46A;--ivory:#F8F5EF;--esp:#382820;--beige:#E9DFD0;
+--bg:#F8F5EF;--bg2:#E9DFD0;--ink:#382820;--card:#fff;--line:rgba(56,40,32,.14);
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0E2B24;--bg2:#123C32;--ink:#F1EBDD;--card:#17463B;--line:rgba(214,180,106,.25)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0E2B24;--bg2:#123C32;--ink:#F1EBDD;--card:#17463B;--line:rgba(214,180,106,.25)}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.7 var(--sans)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--em);z-index:60}
+img,svg{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0}
+h2{font-size:clamp(34px,5vw,58px);letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:110px 0}
+.lead{max-width:56ch;opacity:.82}
+.btn{display:inline-block;border:1px solid var(--gold);border-radius:999px;padding:14px 30px;font:500 14px var(--sans);letter-spacing:.08em;text-decoration:none;cursor:pointer;transition:.35s;background:transparent;color:inherit}
+.btn.gold{background:var(--gold);color:var(--em)}
+.btn.gold:hover{background:#e6c982;box-shadow:0 10px 30px -10px rgba(214,180,106,.8);transform:translateY(-2px)}
+.btn.line:hover{background:var(--gold);color:var(--em)}
+.btn.sm{padding:9px 18px;font-size:13px}
+/* header */
+header{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);z-index:50;transition:.4s}
+header.solid{background:rgba(18,60,50,.96);backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;color:var(--ivory)}
+.logo{font:600 22px var(--serif);letter-spacing:.22em;text-decoration:none;color:var(--gold)}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a:not(.btn){text-decoration:none;font-size:14px;letter-spacing:.06em;position:relative}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:.3s}
+.menu a:not(.btn):hover::after{width:100%}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger i{display:block;height:1.5px;background:var(--gold);margin:7px 10px;transition:.3s}
+/* hero */
+.hero{min-height:100vh;min-height:100svh;background:var(--em);color:var(--ivory);position:relative;overflow:hidden;display:flex;align-items:center;padding:130px 0 90px}
+.scene{position:absolute;inset:0}
+.scene svg{width:100%;height:100%}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(50px,9vw,112px);max-width:9em;letter-spacing:-.02em;animation:rise 1.4s cubic-bezier(.2,.7,.2,1) both}
+.hero p{max-width:46ch;font-size:19px;margin:26px 0 38px;animation:rise 1.4s .25s cubic-bezier(.2,.7,.2,1) both}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;animation:rise 1.4s .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}}
+.pl{will-change:transform}
+/* collection */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:34px 0 44px}
+.chip{border:1px solid var(--line);background:none;color:inherit;border-radius:999px;padding:9px 20px;font:400 14px var(--sans);cursor:pointer;transition:.3s}
+.chip:hover{border-color:var(--gold)}
+.chip.on{background:var(--em);color:var(--gold);border-color:var(--em)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:28px}
+.card{background:var(--card);border-radius:26px;overflow:hidden;border:1px solid var(--line);transition:.5s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column}
+.card:hover{transform:translateY(-8px);box-shadow:0 30px 50px -28px rgba(18,60,50,.55);border-color:var(--gold)}
+.card .ph{background:var(--bg2);padding:26px 20px 10px;overflow:hidden}
+.card .ph svg{transition:transform .8s}
+.card:hover .ph svg{transform:scale(1.06)}
+.card .bd{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:27px}
+.card p{margin:0;font-size:15px;opacity:.78;flex:1}
+.price{color:#8d6d28;font-weight:500;margin:8px 0 10px}
+@media (prefers-color-scheme:dark){.price{color:var(--gold)}}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+/* repair */
+.repair{background:var(--em);color:var(--ivory)}
+.repair h2{color:var(--gold)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.ba{position:relative;border-radius:26px;overflow:hidden;background:var(--bg2);user-select:none;touch-action:pan-y;border:1px solid rgba(214,180,106,.4)}
+.ba .after{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
+.ba svg{width:100%;height:auto}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.knob{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--gold);pointer-events:none}
+.knob::after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--em);display:grid;place-items:center;font-size:18px}
+.tag{position:absolute;bottom:14px;padding:4px 14px;border-radius:999px;background:rgba(18,60,50,.85);color:var(--gold);font-size:13px;pointer-events:none}
+ul.svc{list-style:none;padding:0;margin:28px 0 36px;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px}
+ul.svc li{padding:14px 0;border-top:1px solid rgba(214,180,106,.35)}
+/* custom */
+form{display:grid;gap:18px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:grid;gap:6px;font-size:14px;letter-spacing:.04em}
+input,select,textarea{font:300 16px var(--sans);color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 16px;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:0}
+.custom .panel{background:var(--bg2);border-radius:32px;padding:clamp(26px,5vw,60px);display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.ok{color:#2f7a5f;font-weight:500;min-height:1.4em;margin:0}
+/* why */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:50px}
+.why div{border:1px solid var(--line);border-radius:24px;padding:34px 28px;transition:.4s}
+.why div:hover{border-color:var(--gold);background:var(--card)}
+.why svg{width:34px;height:34px;stroke:var(--gold);fill:none;stroke-width:1.4;margin-bottom:18px}
+.why h3{font-size:26px;margin-bottom:6px}.why p{margin:0;font-size:15px;opacity:.78}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:16px;margin-top:46px}
+.gal div{border-radius:22px;overflow:hidden;position:relative;background:var(--bg2)}
+.gal div:nth-child(1){grid-column:span 2;grid-row:span 2}.gal div:nth-child(4){grid-row:span 2}.gal div:nth-child(6){grid-column:span 2}
+.gal svg{width:100%;height:100%;transition:transform .9s}.gal div:hover svg{transform:scale(1.07)}
+.gal span{position:absolute;left:16px;bottom:14px;color:var(--ivory);font-size:14px;background:rgba(18,60,50,.8);padding:3px 14px;border-radius:99px}
+/* about + reviews */
+.about{background:var(--bg2)}
+.stats{display:flex;gap:44px;margin-top:34px;flex-wrap:wrap}
+.stats b{display:block;font:500 48px var(--serif);color:#8d6d28}
+@media (prefers-color-scheme:dark){.stats b{color:var(--gold)}}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:46px}
+.rev blockquote{margin:0;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:32px}
+.stars{color:var(--gold);letter-spacing:4px}
+.rev blockquote p{font:italic 500 23px/1.35 var(--serif);margin:14px 0 18px}
+.rev cite{font-size:14px;font-style:normal;opacity:.7}
+/* contact */
+.contact .panel{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.info a{display:block;font:500 28px var(--serif);text-decoration:none;margin:2px 0 18px}
+.info small{display:block;opacity:.6;letter-spacing:.08em}
+.mapbox{margin-top:12px;border-radius:24px;background:var(--em);color:var(--ivory);padding:30px;border:1px solid var(--gold)}
+/* footer */
+footer{background:var(--em);color:var(--gold);padding:80px 0 30px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px}
+footer h4{font:600 20px var(--serif);margin:0 0 14px;letter-spacing:.05em}
+footer a{display:block;text-decoration:none;opacity:.85;padding:3px 0;font-size:15px}footer a:hover{opacity:1;color:#fff}
+.copy{border-top:1px solid rgba(214,180,106,.3);margin-top:50px;padding-top:24px;font-size:14px;opacity:.75}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;background:var(--gold);color:var(--em);border-radius:999px;padding:14px 22px;font-weight:500;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+@media (max-width:900px){
+section{padding:76px 0}
+.burger{display:block}
+.menu{position:fixed;inset:calc(76px + env(safe-area-inset-top,0px)) 0 auto;background:var(--em);flex-direction:column;padding:30px;gap:22px;transform:translateY(-120%);transition:.5s;visibility:hidden}
+.menu.open{transform:none;visibility:visible}
+.split,.custom .panel,.contact .panel{grid-template-columns:1fr;gap:36px}
+.fg{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal div:nth-child(n){grid-column:auto;grid-row:auto}.gal div:nth-child(1){grid-column:span 2}
+.f2,ul.svc{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a class="logo" href="#home">ASHRAF SOFAS</a>
+<button class="burger" id="bg" aria-label="Open menu"><i></i><i></i></button>
+<nav class="menu" id="mn" aria-label="Main">
+<a href="#home">Home</a><a href="#collection">Sofa Collection</a><a href="#repair">Sofa Repair</a><a href="#custom">Custom Sofa</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+<a class="btn gold sm" href="#custom">Get Free Quote</a></nav></div></header>
+
+<main>
+<section class="hero" id="home">
+<div class="scene pl" data-s=".12">
+<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<rect width="1600" height="900" fill="#123C32"/>
+<rect x="0" y="690" width="1600" height="210" fill="#0c2c24"/>
+<path d="M960 690V250a190 190 0 0 1 380 0V690z" fill="#0f3329" stroke="#D6B46A" stroke-width="3"/>
+<path d="M990 690V255a160 160 0 0 1 320 0V690z" fill="none" stroke="#D6B46A" stroke-opacity=".4"/>
+<circle cx="1150" cy="190" r="70" fill="none" stroke="#D6B46A" stroke-opacity=".6" stroke-width="2"/>
+<line x1="1150" y1="0" x2="1150" y2="120" stroke="#D6B46A" stroke-opacity=".7"/>
+<rect x="1420" y="90" width="90" height="210" fill="#E9DFD0" opacity=".08"/>
+<ellipse cx="1150" cy="745" rx="420" ry="26" fill="#000" opacity=".3"/>
+<g transform="translate(790 410) scale(2.05)" id="hs"></g>
+<path d="M1450 690c10-90-30-150 10-230 20 70 40 140 20 230z" fill="#D6B46A" opacity=".18"/>
+</svg></div>
+<div class="wrap"><h1>Where Luxury Meets Comfort.</h1>
+<p>Discover beautifully crafted sofas, expert sofa restoration and bespoke furniture designed around your lifestyle.</p>
+<div class="cta"><a class="btn gold" href="#collection">Explore Our Collection</a><a class="btn line" href="#repair">Book Sofa Repair</a></div></div>
+</section>
+
+<section id="collection"><div class="wrap">
+<h2>The Sofa Collection</h2>
+<p class="lead">Every piece is built on a kiln-dried hardwood frame, high-resilience foam and hand-finished upholstery.</p>
+<div class="filters" id="fl" role="tablist"></div>
+<div class="grid" id="pg"></div>
+</div></section>
+
+<section class="repair" id="repair"><div class="wrap split">
+<div class="ba" id="ba">
+<div class="before"></div><div class="after"></div>
+<div class="knob" id="kn"></div><span class="tag" style="left:14px">Before</span><span class="tag" style="right:14px">After</span>
+<input type="range" min="0" max="100" value="50" id="bar" aria-label="Compare before and after">
+</div>
+<div><h2>Give Your Old Sofa a Beautiful New Life.</h2>
+<ul class="svc"><li>Sofa Foam Replacement</li><li>Sofa Fabric Replacement</li><li>Sofa Cushion Repair</li><li>Wooden Frame Repair</li><li>Sofa Polish</li><li>Complete Sofa Restoration</li></ul>
+<a class="btn gold" href="#" data-wa="Hello Ashraf Sofas, I would like to book a sofa repair service.">Book Repair Service</a></div>
+</div></section>
+
+<section class="custom" id="custom"><div class="wrap"><div class="panel">
+<div><h2>Your Sofa. Your Style. Your Creation.</h2><p class="lead" style="margin-top:20px">Tell us what you imagine. Our designers reply within one working day with a sketch, fabric options and a fixed quote.</p></div>
+<form id="qf">
+<div class="f2"><label>Sofa design preference<input name="Design" placeholder="e.g. curved, tufted, minimal" required></label>
+<label>Sofa type<select name="Type"><option>Luxury Sofa</option><option>L Shape Sofa</option><option>3 Seater Sofa</option><option>2 Seater Sofa</option><option>Modern Sofa</option><option>Chesterfield Sofa</option></select></label></div>
+<div class="f2"><label>Fabric<select name="Fabric"><option>Velvet</option><option>Leather</option><option>Linen</option><option>Bouclé</option></select></label>
+<label>Colour preference<input name="Colour" placeholder="e.g. emerald green"></label></div>
+<div class="f2"><label>Required dimensions<input name="Size" placeholder="e.g. 220 × 95 × 85 cm"></label>
+<label>Budget<input name="Budget" placeholder="Your budget range"></label></div>
+<div class="f2"><label>Contact number<input name="Phone" type="tel" required></label>
+<label>Reference image<input type="file" accept="image/*" id="ref"></label></div>
+<label>Additional requirements<textarea name="Notes" rows="3"></textarea></label>
+<button class="btn gold" type="submit">Request Custom Quote</button><p class="ok" id="qm" role="status"></p>
+</form></div></div></section>
+
+<section id="why"><div class="wrap"><h2>Why Choose Us</h2><div class="why" id="wy"></div></div></section>
+
+<section id="gallery" style="padding-top:0"><div class="wrap"><h2>Gallery</h2><div class="gal" id="gl"></div></div></section>
+
+<section class="about" id="about"><div class="wrap split">
+<div><h2>Three generations of craft, one studio.</h2>
+<div class="stats"><div><b>25+</b>years of craft</div><div><b>4,000</b>sofas restored</div><div><b>1,200</b>custom commissions</div></div></div>
+<div class="lead"><p>Ashraf Sofas began as a small upholstery workshop with a simple belief: a sofa should be the most comfortable and most beautiful place in a home.</p><p>Today our artisans build new sofas from the frame up, restore treasured pieces that families refuse to part with, and design bespoke furniture to the millimetre. We use hardwood frames, resilient foam and fabrics chosen for how they age, and every sofa is inspected by the master upholsterer before it leaves the studio.</p></div>
+</div></section>
+
+<section><div class="wrap"><h2>Words from our clients</h2><div class="rev">
+<blockquote><div class="stars" aria-label="5 stars">★★★★★</div><p>“My 15-year-old Chesterfield looks like it was made yesterday. Flawless stitching.”</p><cite>Ananya M., Restoration</cite></blockquote>
+<blockquote><div class="stars" aria-label="5 stars">★★★★★</div><p>“They built our L-shape sofa to fit an awkward corner exactly. Worth every rupee.”</p><cite>Rohit & Sana K., Custom Sofa</cite></blockquote>
+<blockquote><div class="stars" aria-label="5 stars">★★★★★</div><p>“Honest advice, fair pricing and a team that genuinely cares about the finish.”</p><cite>Meera D., New Sofa</cite></blockquote>
+</div></div></section>
+
+<section class="contact" id="contact" style="padding-top:0"><div class="wrap"><div class="panel">
+<div class="info"><h2 style="margin-bottom:30px">Visit the Showroom</h2>
+<small>CALL</small><a href="tel:+919999999999">+91 99999 99999</a>
+<small>WHATSAPP</small><a href="https://wa.me/919999999999" target="_blank" rel="noopener">+91 99999 99999</a>
+<small>ADDRESS</small><p style="margin:2px 0 18px">12 Heritage Lane, Design District<br>Your City, 400001</p>
+<div class="mapbox"><p style="margin:0 0 16px">Find us on Google Maps and plan your visit.</p><a class="btn gold sm" style="font-size:13px;margin:0;font-family:var(--sans)" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ashraf+Sofas">Open in Google Maps</a></div>
+<p style="margin-top:20px"><a href="https://instagram.com/" target="_blank" rel="noopener" style="font:400 17px var(--sans);display:inline;text-decoration:underline">Follow us on Instagram</a></p></div>
+<form id="cf"><label>Name<input name="Name" required></label><label>Phone<input name="Phone" type="tel" required></label>
+<label>Email<input name="Email" type="email"></label><label>Message<textarea name="Message" rows="5" required></textarea></label>
+<button class="btn gold" type="submit">Send Message</button><p class="ok" id="cm" role="status"></p></form>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><div class="fg">
+<div><div class="logo">ASHRAF SOFAS</div><p style="opacity:.8;max-width:30ch">Luxury sofas, restored and made to measure.</p></div>
+<div><h4>Quick Links</h4><a href="#collection">Sofa Collection</a><a href="#repair">Sofa Repair</a><a href="#custom">Custom Sofa</a><a href="#about">About Us</a></div>
+<div><h4>Our Services</h4><a href="#collection">New Sofa Sales</a><a href="#repair">Sofa Restoration</a><a href="#custom">Custom Manufacturing</a><a href="#collection">Furniture Collection</a></div>
+<div><h4>Contact</h4><a href="tel:+919999999999">+91 99999 99999</a><a href="https://wa.me/919999999999">WhatsApp</a><a href="https://instagram.com/">Instagram</a><a href="https://facebook.com/">Facebook</a></div>
+</div><div class="copy">© 2026 Ashraf Sofas. All rights reserved.</div></div></footer>
+<a class="wa" href="#" data-wa="Hello Ashraf Sofas, I would like to enquire.">WhatsApp us</a>
+
+<script>
+const NUM="919999999999";
+const wa=t=>"https://wa.me/"+NUM+"?text="+encodeURIComponent(t);
+function sofa(c,d,o){o=o||{};const w=o.w||320,L=o.L,ch=o.ch,tuft=ch?'<g fill="'+d+'" opacity=".5">'+[60,100,140,180,220,260].map(x=>'<circle cx="'+x+'" cy="'+(o.y||52)+'" r="3.5"/>').join("")+'</g>':'';
+return '<svg viewBox="0 0 340 190" role="img" aria-label="'+(o.n||"Sofa")+'"><ellipse cx="170" cy="176" rx="150" ry="9" fill="#000" opacity=".18"/>'+
+(L?'<rect x="226" y="62" width="100" height="100" rx="14" fill="'+d+'"/><rect x="236" y="104" width="84" height="44" rx="10" fill="'+c+'"/>':'')+
+'<rect x="'+(170-w/2)+'" y="34" width="'+w+'" height="'+(ch?100:92)+'" rx="'+(ch?26:20)+'" fill="'+d+'"/>'+
+'<rect x="'+(170-w/2+20)+'" y="46" width="'+(w-40)+'" height="68" rx="16" fill="'+c+'"/>'+tuft+
+'<rect x="'+(170-w/2-4)+'" y="'+(ch?72:78)+'" width="34" height="76" rx="'+(ch?22:14)+'" fill="'+d+'"/><rect x="'+(170+w/2-30)+'" y="'+(ch?72:78)+'" width="34" height="76" rx="'+(ch?22:14)+'" fill="'+d+'"/>'+
+'<rect x="'+(170-w/2+28)+'" y="108" width="'+(w-56)+'" height="40" rx="12" fill="'+c+'"/>'+
+'<path d="M'+(170-w/2+28)+' 128h'+(w-56)+'" stroke="'+d+'" stroke-opacity=".5"/>'+
+'<g fill="#D6B46A"><rect x="'+(170-w/2+6)+'" y="150" width="7" height="20" rx="2"/><rect x="'+(170+w/2-13)+'" y="150" width="7" height="20" rx="2"/></g></svg>'}
+const P=[
+["Luxury Sofa","Luxury Sofa","Deep velvet seating on a hardwood frame with brass-finish feet.","From ₹85,000",["#1d5a49","#123C32"],{w:300}],
+["L Shape Sofa","L Shape Sofa","Generous corner seating with a reversible chaise.","From ₹1,25,000",["#cdb99a","#a99373"],{L:1,w:240}],
+["3 Seater Sofa","3 Seater Sofa","Family-sized comfort with high-resilience foam cushions.","From ₹65,000",["#8a6a4c","#5b4331"],{w:310}],
+["2 Seater Sofa","2 Seater Sofa","A compact, sculpted loveseat for smaller spaces.","From ₹45,000",["#D6B46A","#a98a45"],{w:230}],
+["Modern Sofa","Modern Sofa","Clean lines, slim arms and a low, relaxed profile.","From ₹58,000",["#efe8dc","#cfc2ad"],{w:290}],
+["Chesterfield Sofa","Chesterfield Sofa","Hand-tufted deep-button back with rolled arms.","From ₹1,10,000",["#4a352a","#382820"],{w:300,ch:1}],
+["Custom Sofa","Custom Sofa","Designed with you, sized to your room, built in our studio.","Get Price",["#2a6b58","#123C32"],{w:290,ch:1}]];
+const cats=["All",...P.map(p=>p[1])];let cur="All";
+const fl=document.getElementById("fl"),pg=document.getElementById("pg");
+function draw(){fl.innerHTML=cats.map(c=>'<button class="chip'+(c==cur?" on":"")+'" data-c="'+c+'">'+c+'</button>').join("");
+pg.innerHTML=P.filter(p=>cur=="All"||p[1]==cur).map(p=>'<article class="card"><div class="ph">'+sofa(p[4][0],p[4][1],Object.assign({n:p[0]},p[5]))+'</div><div class="bd"><h3>'+p[0]+'</h3><p>'+p[2]+'</p><div class="price">'+p[3]+'</div><div class="row"><a class="btn line sm" href="#" data-wa="Hello, I would like details of the '+p[0]+'.">View Details</a><a class="btn gold sm" href="#" data-wa="Hello, I am interested in the '+p[0]+'. Please share the price.">WhatsApp Enquiry</a></div></div></article>').join("")}
+fl.onclick=e=>{const c=e.target.dataset.c;if(c){cur=c;draw()}};draw();
+document.getElementById("hs").innerHTML=sofa("#1d5a49","#0b2a22",{w:300,ch:1}).replace(/^<svg[^>]*>/,"").replace("</svg>","");
+document.querySelector(".before").innerHTML=sofa("#9b8a74","#6f6049",{w:300,ch:1}).replace('<svg ','<svg style="filter:saturate(.35) contrast(.85)" ');
+document.querySelector(".after").innerHTML=sofa("#1d5a49","#123C32",{w:300,ch:1});
+const bar=document.getElementById("bar");bar.oninput=()=>{document.querySelector(".after").style.clipPath="inset(0 0 0 "+bar.value+"%)";document.getElementById("kn").style.left=bar.value+"%"};
+const ic=['<path d="M4 20l8-16 8 16zM9 14h6"/>','<path d="M12 3l8 5v8l-8 5-8-5V8z"/>','<path d="M4 20L20 4M14 4h6v6"/>','<circle cx="12" cy="12" r="8"/><path d="M12 8v8M9 10.5h6"/>','<path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/>','<path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2 4.5 4.5 0 0 1 8 2c0 6-8 11-8 11z"/>'];
+document.getElementById("wy").innerHTML=[["Expert Craftsmanship","Master upholsterers with decades of hand-finishing experience."],["Premium Materials","Hardwood frames, resilient foam and long-wearing fabrics."],["Custom Designs","Every dimension, curve and colour made to your brief."],["Affordable Pricing","Honest quotes with no hidden charges."],["Trusted Service","Free pickup, delivery and a written warranty."],["Customer Satisfaction","Most of our new clients arrive by recommendation."]].map((x,i)=>'<div><svg viewBox="0 0 24 24">'+ic[i]+'</svg><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>').join("");
+const G=[["Living room","#1d5a49","#123C32",{w:300}],["Sofa design","#cdb99a","#a99373",{L:1,w:240}],["Upholstery","#4a352a","#382820",{ch:1,w:300}],["Restoration","#D6B46A","#a98a45",{w:230}],["Living room","#efe8dc","#cfc2ad",{w:290}],["Custom project","#2a6b58","#0b2a22",{ch:1,w:300}]];
+document.getElementById("gl").innerHTML=G.map(g=>'<div>'+sofa(g[1],g[2],g[3]).replace('<svg ','<svg preserveAspectRatio="xMidYMid slice" ')+'<span>'+g[0]+'</span></div>').join("");
+/* actions */
+document.addEventListener("click",e=>{const a=e.target.closest("[data-wa]");if(a){e.preventDefault();window.open(wa(a.dataset.wa),"_blank","noopener")}});
+function send(id,msgId,title){document.getElementById(id).onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);let t="*"+title+"*\n";f.forEach((v,k)=>{if(typeof v=="string"&&v)t+=k+": "+v+"\n"});
+if(id=="qf"&&document.getElementById("ref").files.length)t+="Reference image: will attach in this chat.\n";
+document.getElementById(msgId).textContent="Thank you. Opening WhatsApp to send your request.";window.open(wa(t),"_blank","noopener");e.target.reset()}}
+send("qf","qm","Custom Sofa Quote Request");send("cf","cm","Website Enquiry");
+/* nav + parallax */
+const hd=document.getElementById("hd"),mn=document.getElementById("mn"),pl=document.querySelector(".pl");
+document.getElementById("bg").onclick=()=>mn.classList.toggle("open");mn.onclick=e=>{if(e.target.tagName=="A")mn.classList.remove("open")};
+addEventListener("scroll",()=>{hd.classList.toggle("solid",scrollY>40);if(scrollY<innerHeight)pl.style.transform="translateY("+scrollY*.12+"px) scale(1.05)"},{passive:true});
+</script>
+</body>
+</html>
